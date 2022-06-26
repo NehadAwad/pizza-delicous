@@ -27,6 +27,10 @@ app.get('/', (req, res)=>{
       database: "pizza_node"
     })
     con.query("SELECT * FROM products", (err, result) =>{
+      if(err){
+        console.log(err)
+      }
+      console.log(result)
       res.render('pages/index', {result:result});
     })    
     

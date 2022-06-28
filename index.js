@@ -30,7 +30,7 @@ app.get('/', (req, res)=>{
       if(err){
         console.log(err)
       }
-      console.log(result)
+      console.log(result[1])
       res.render('pages/index', {result:result});
     })    
     

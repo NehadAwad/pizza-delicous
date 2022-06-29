@@ -31,7 +31,7 @@ app.get('/', (req, res)=>{
         console.log(err)
       }
       console.log(result[1])
-      res.render('pages/index', {result:result});
+      res.render('pages/index', {results:result});
     })    
     
 }); 

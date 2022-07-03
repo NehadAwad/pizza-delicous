@@ -36,6 +36,11 @@ app.get('/', (req, res)=>{
     
 }); 
 
+app.post('/order', (req, res)=>{
+     
+  
+});
+
 const start = async () => {
     try {
       app.listen(port, () =>
